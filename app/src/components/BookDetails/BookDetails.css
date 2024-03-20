@@ -1,0 +1,179 @@
+.bookPageContainer {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center-align children horizontally */
+  padding: 20px; /* Add padding inside the container */
+  background-color: #0e0f15; /* Background color for the container */
+  color: white; /* Text color for content */
+  width: 100%; /* Take up the full width */
+  height: 100%; /* Take up the full height */
+}
+
+/* Loading container styles */
+.loading-container {
+  width: 100%; /* Take up the full width */
+  height: 100vh; /* Take up the full viewport height */
+}
+
+/* Styles for the book details section */
+.bookDetails {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange children in a row */
+  gap: 20px; /* Add spacing between children */
+  width: 100%; /* Take up the full width */
+  margin: 20px auto; /* Add margin and center horizontally */
+}
+
+/* Styles for the container of the book cover */
+.bookDetails-cover-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center-align children horizontally */
+  width: 900px; /* Set a fixed width */
+  border-radius: 8px; /* Add rounded corners */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styles for the book cover image */
+.bookDetails-cover {
+  max-width: 100%; /* Make sure the image doesn't exceed container width */
+  height: 600px; /* Set a fixed height */
+  object-fit: fill; /* Cover entire container */
+  margin: 20px; /* Add margin around the image */
+  padding: 20px; /* Add padding inside the container */
+}
+
+/* Styles for the button to toggle cover display */
+.toggleButtonContainer {
+  text-align: center; /* Center-align text */
+  margin-top: 20px; /* Add space above the button */
+}
+
+/* Styles for the toggle button */
+.toggleButton {
+  background-color: #007bff; /* Button background color */
+  border: none; /* Remove border */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Add padding */
+  text-align: center; /* Center-align text */
+  text-decoration: none; /* Remove default underline */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border-radius: 5px; /* Add rounded corners */
+  margin-bottom: 20px; /* Add space below the button */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Styles for the toggle button on hover */
+.toggleButton:hover {
+  background-color: #0056b3; /* Darken button color on hover */
+}
+
+/* Styles for the book details information section */
+.bookDetails-info {
+  width: 100%; /* Take up the full width */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin: 20px; /* Add margin */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Add rounded corners */
+}
+
+/* Styles for the general book section */
+.bookSection {
+  width: 100%; /* Take up the full width */
+  margin-top: 20px; /* Add space above the section */
+  border-radius: 8px; /* Add rounded corners */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styles for the section heading */
+.bookSection h2 {
+  font-size: 2rem; /* Set font size */
+  color: #007bff; /* Heading color */
+  border-bottom: 1px solid #ddd; /* Add a bottom border */
+  padding-bottom: 10px; /* Add space below the border */
+  margin-bottom: 10px; /* Add space below the heading */
+}
+
+/* Styles for the container of iframes within a section */
+.iframeContainer {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 20px; /* Add spacing between elements */
+  padding: 20px; /* Add padding */
+}
+
+/* Styles for responsive iframes within a section */
+.iframeContainer iframe {
+  max-width: 100%; /* Make sure iframes don't exceed container width */
+}
+
+/* Styles for common styling of review clippings, videos, and purchase links */
+.reviewClipping,
+.video,
+.purchaseLink {
+  padding: 20px; /* Add padding */
+  border-bottom: 1px solid #ddd; /* Add a bottom border */
+}
+
+/* Styles for individual purchase link items */
+.purchaseLinkItem {
+  flex: 1; /* Take up available space */
+}
+
+/* Styles for the card-like container of a purchase link */
+.purchaseLinkCard {
+  background-color: black; /* Background color */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Styles for paragraphs within a purchase link */
+.purchaseLink p {
+  margin-bottom: 10px; /* Add space below paragraphs */
+}
+
+/* Styles for the button within a purchase link */
+.purchaseLink-btn {
+  margin-top: 10px; /* Add space above the button */
+  background-color: #007bff; /* Button background color */
+  border: none; /* Remove border */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Add padding */
+  text-align: center; /* Center-align text */
+  text-decoration: none; /* Remove default underline */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border-radius: 5px; /* Add rounded corners */
+  transition: transform 0.3s; /* Smooth transition */
+}
+
+/* Styles for the button within a purchase link on hover */
+.purchaseLink-btn:hover {
+  transform: scale(1.05); /* Enlarge button on hover */
+  background-color: #0056b3; /* Darken button color on hover */
+}
+
+/* Styles for the book title in book details */
+.bookDetails-title {
+  font-size: 3rem; /* Set font size */
+  margin: 10px; /* Add margin */
+  margin-bottom: 10px; /* Add space below the title */
+  padding: 10px; /* Add padding */
+}
+
+/* Styles for the author information in book details */
+.bookDetails-author {
+  color: #555; /* Text color */
+  margin-bottom: 10px; /* Add space below the author info */
+}
+
+/* Styles for the about section in book details */
+.bookDetails-about {
+  max-height: 400px; /* Set maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-bottom: 20px; /* Add space below*/
+}

@@ -1,0 +1,134 @@
+.login-form {
+  width: 100%;
+  max-width: 400px; /* Adjust width as needed */
+  margin: 0 auto;
+  padding: 20px; /* Added padding for better spacing */
+  border: 1px solid black; /* Added border for better visual separation */
+  border-radius: 10px; /* Added border radius for rounded corners */
+}
+
+/* Styles for the heading in the login form */
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for the container of form inputs in the login form */
+.loginForm-input-container {
+  margin-bottom: 15px;
+}
+
+/* Styles for labels in the login form */
+.loginForm-input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Styles for text inputs in the login form */
+.loginForm-input-container input[type="text"],
+.loginForm-input-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Increased font size for better readability */
+}
+
+/* Styles for submit button in the login form */
+.loginForm-input-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Blue button color */
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Hover effect for submit button in the login form */
+.loginForm-input-container input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for paragraphs in the login form */
+.login-form p {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Styles for links in the login form */
+.login-form p a {
+  color: #007bff; /* Blue link color */
+}
+
+/* Styles for error messages in the login form */
+.loginForm-input-container .error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+/* Styles for the password input wrapper */
+.password-input-wrapper {
+  position: relative;
+}
+
+/* Styles for the password toggle icon */
+.password-input-wrapper .password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Styles for the password strength container */
+.password-strength-container {
+  margin-top: 5px;
+}
+
+/* Styles for the password strength list */
+.password-strength-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styles for password strength list items */
+.password-strength-container li {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Styles for valid password strength */
+.password-strength-container .valid {
+  color: green;
+}
+
+/* Styles for invalid password strength */
+.password-strength-container .invalid {
+  color: red;
+}
+
+@media screen and (min-width: 576px) {
+  /* Media query for tablets */
+  .login-form {
+    max-width: 500px; /* Increase maximum width for tablets */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Media query for laptops */
+  .login-form {
+    max-width: 700px; /* Increase maximum width for laptops */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Media query for desktops */
+  .login-form {
+    max-width: 900px; /* Increase maximum width for desktops */
+  }
+}

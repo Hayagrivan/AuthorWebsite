@@ -1,0 +1,48 @@
+.profile-picture-container {
+  margin-bottom: 20px; /* Add margin to the bottom for spacing */
+  display: flex; /* Arrange items in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Styling for the wrapper around the profile picture */
+.picture-wrapper {
+  width: 200px; /* Set width of the wrapper */
+  height: 200px; /* Set height of the wrapper */
+  border: 2px solid #ccc; /* Add border with light gray color */
+  background-color: white; /* Set background color to white */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  overflow: hidden; /* Hide overflow content */
+  position: relative; /* Set position to relative for child positioning */
+}
+
+/* Styling for the profile picture itself */
+.profile-picture {
+  width: 100%; /* Ensure the image takes the full width */
+  height: 100%; /* Ensure the image takes the full height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Styling for the default profile picture */
+.default-profile-picture {
+  width: 100%; /* Ensure the image takes the full width */
+  height: 100%; /* Ensure the image takes the full height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Styling for the text displayed when no profile picture is selected */
+.upload-text {
+  position: absolute; /* Set position to absolute for custom positioning */
+  bottom: 0; /* Position the text at the bottom of the wrapper */
+  left: 0; /* Position the text at the left of the wrapper */
+  width: 100%; /* Set width to take the full width of the wrapper */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Semi-transparent white background */
+  text-align: center; /* Center-align the text */
+  padding: 8px 0; /* Add padding for better appearance */
+  font-weight: bold; /* Set font weight to bold */
+}

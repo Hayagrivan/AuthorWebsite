@@ -1,0 +1,75 @@
+/* Container for user information */
+.user-info-container {
+  padding: 20px; /* Add padding around the container */
+  margin-bottom: 20px; /* Add margin at the bottom of the container */
+  background-color: black; /* Set background color to black */
+}
+
+/* Container for personal information heading */
+.personal-information-heading-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange items in a row */
+  gap: 20px; /* Add space between items */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+/* Container for user engagement information */
+.user-engagement-info {
+  text-align: left; /* Align text to the left */
+  border-radius: 8px; /* Add rounded corners */
+  padding: 20px; /* Add padding inside the container */
+  margin: 20px 0; /* Add margin at the top and bottom */
+  background-color: bisque; /* Set background color to bisque */
+}
+
+/* Container for user personal information */
+.user-personal-info {
+  text-align: left; /* Align text to the left */
+  border-radius: 8px; /* Add rounded corners */
+  padding: 20px; /* Add padding inside the container */
+  margin: 20px 0; /* Add margin at the top and bottom */
+  background-color: bisque; /* Set background color to bisque */
+}
+
+/* Styling for heading in user personal information */
+.user-personal-info h3 {
+  font-size: 24px; /* Set font size for heading */
+}
+
+/* Styling for paragraphs in user engagement and personal information */
+.user-engagement-info p,
+.user-personal-info p {
+  margin: 10px 0; /* Add margin above and below paragraphs */
+  font-size: 16px; /* Set font size for paragraphs */
+}
+
+/* Styling for strong elements in user engagement and personal information */
+.user-engagement-info strong,
+.user-personal-info strong {
+  font-weight: bold; /* Set font weight to bold */
+  font-size: 18px; /* Set font size for strong elements */
+  color: #333; /* Set text color to dark gray */
+}
+
+/* Styling for edit button */
+.edit-button {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  border: none; /* Remove border */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 16px; /* Set font size for button text */
+  z-index: 2; /* Set z-index to ensure button stays on top */
+}
+
+/* Styling for edit button on hover */
+.edit-button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Styling for edit icon */
+.edit-icon {
+  margin-right: 5px; /* Add margin to the right of the icon */
+}

@@ -1,0 +1,35 @@
+.signup {
+  /* Center align content vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure minimum height of viewport */
+  /* Gradient background */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 153, 51, 1) 0%,
+    rgba(217, 130, 63, 1) 0%,
+    rgba(89, 54, 101, 1) 50%,
+    rgba(52, 31, 112, 1) 100%,
+    rgba(0, 0, 128, 1) 100%
+  );
+  /* Background image */
+  background-image: url("../../assets/images/signup-background-1.jpg");
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+}
+
+.signup-container {
+  width: 90%; /* Adjust width as needed */
+  max-width: 700px; /* Maximum width */
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* White background with transparency */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin: 20px; /* Add margin around the container */
+}

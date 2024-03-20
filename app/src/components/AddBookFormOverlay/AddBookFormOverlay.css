@@ -1,0 +1,38 @@
+/* Styles for the overlay container */
+.bookFormOverlayContainer {
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0; /* Align to the top edge */
+  left: 0; /* Align to the left edge */
+  width: 100%; /* Take up the full width of the viewport */
+  height: 100%; /* Take up the full height of the viewport */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 2; /* Ensure the overlay appears above other elements */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background changes */
+}
+
+/* Styles for the visible state of the overlay container */
+.bookFormOverlayContainer.visible {
+  display: flex; /* Make the overlay visible */
+  background: rgba(0, 0, 0, 0); /* Fully transparent initially */
+}
+
+/* Improved transition for visibility change */
+.bookFormOverlayContainer.visible {
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay color when visible */
+}
+
+/* Apply a fade-in effect when the overlay becomes visible */
+.bookFormOverlayContainer {
+  opacity: 0; /* Initially fully transparent */
+  animation: fadeIn 0.3s ease-in-out forwards; /* Use fadeIn animation */
+}
+
+/* Keyframes for the fadeIn animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Fade in to fully opaque */
+  }
+}

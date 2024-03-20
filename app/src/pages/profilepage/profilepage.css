@@ -1,0 +1,43 @@
+.profile-container {
+  width: 100vw; /* Full width of the viewport */
+  min-height: 100vh; /* Ensure the container takes at least the height of the viewport */
+  position: relative; /* Relative positioning for absolute child elements */
+  overflow: scroll; /* Allow scrolling if contents overflow */
+  background-color: black; /* Background color of the profile container */
+}
+
+.profile-container h1 {
+  color: white; /* Text color for main headings */
+  font-weight: bolder; /* Bold font weight for main headings */
+  font-size: 50px; /* Adjust font size for main headings */
+}
+
+.profile-container h2 {
+  color: white; /* Text color for secondary headings */
+  font-weight: 300; /* Lighter font weight for secondary headings */
+}
+
+.ProfilePicture {
+  position: absolute; /* Absolute positioning for profile picture */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Centering trick */
+  z-index: 1; /* Ensure the profile picture is above other content */
+}
+
+.UserInformation {
+  position: absolute; /* Absolute positioning for user information */
+  top: calc(50% + 120px); /* Position below the profile picture */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Centering trick */
+  text-align: center; /* Center-align the text */
+  width: 100%; /* Full width */
+}
+
+.banner {
+  width: 100%; /* Full width */
+  height: 300px; /* Adjust height as needed */
+  background-color: rgba(170, 89, 7, 0.8); /* Background color for the banner */
+  position: relative; /* Relative positioning for child elements */
+  z-index: 0; /* Ensure the banner is behind other content */
+}

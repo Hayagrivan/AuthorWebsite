@@ -1,0 +1,48 @@
+/* Styles for the header container */
+.header {
+  /* Set the display property to flex, arranging children in a row */
+  display: flex;
+  /* Space evenly between children along the main axis */
+  justify-content: space-between;
+  /* Align children at the center along the cross axis */
+  align-items: center;
+  /* Padding around the header */
+  padding: 20px;
+  /* Background color of the header */
+  background-color: black;
+  /* Text color of the header */
+  color: #fff;
+  /* Set the width to 100% of the parent container */
+  width: 100%;
+}
+
+/* Styling for the logo container */
+.logo-container {
+  /* Set the display property to flex, arranging children in a column */
+  display: flex;
+  /* Align children at the center along the cross axis */
+  align-items: center;
+}
+
+/* Styling for the logo image within the logo container */
+.logo-container img {
+  /* Set the maximum width of the image */
+  max-width: 40px;
+  /* Margin to the right of the image */
+  margin-right: 10px;
+}
+
+/* Styling for the text span within the logo container */
+.logo-container span {
+  /* Set the font size of the text span */
+  font-size: 1.5em;
+  color: inherit; /* Inherit the color from its parent */
+  cursor: pointer; /* Set cursor to pointer to indicate it's clickable */
+}
+
+/* Styling for the logo link */
+.logo-link {
+  /* Remove default link styles */
+  text-decoration: none;
+  color: inherit; /* Inherit color from its parent */
+}

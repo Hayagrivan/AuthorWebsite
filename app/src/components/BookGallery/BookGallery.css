@@ -1,0 +1,189 @@
+/* Styling for the loading container */
+.loading-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center-align children horizontally */
+  justify-content: center; /* Center-align children vertically */
+  height: 100%; /* Take up the full height */
+}
+
+/* Styling for the main container of the book gallery */
+.bookGalleryContainer {
+  padding: 20px; /* Add padding */
+  position: relative; /* Position relative for z-index */
+  z-index: 0; /* Set initial z-index */
+  background-color: #0e0f15; /* Background color */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: flex-end; /* Align children to the end (right) */
+  width: 100%; /* Take up the full width */
+  height: 100vh; /* Take up the full viewport height */
+}
+
+/* Styling for the "Add New Book" button */
+.addButton {
+  margin-bottom: 20px; /* Add margin below the button */
+  align-self: flex-end; /* Align the button to the end (right) */
+  background-color: #3498db; /* Blue background color */
+  color: #ffffff; /* White text color */
+  padding: 10px 20px; /* Adjust padding for better appearance */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  display: flex; /* Add flex display for icon alignment */
+  align-items: center; /* Align items vertically in the button */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+  gap: 10px; /* Add space between icon and text */
+}
+
+/* Hover effect for the button */
+.addButton:hover {
+  background-color: #1f618d; /* Darker blue on hover */
+}
+
+/* Styling for the book icon inside the button */
+.addButton .bookIcon {
+  margin-right: 8px; /* Adjust margin for spacing between text and icon */
+  font-size: 20px; /* Increase icon size */
+}
+
+/* Styling for the main container inside the gallery */
+.container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center-align children horizontally */
+  width: 100%; /* Take up the full width */
+  overflow-y: auto; /* Enable vertical scrolling if necessary */
+}
+
+/* Styling for the card group */
+.cardGroup {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange cards in a row */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  align-items: flex-start; /* Align cards to the start */
+  justify-content: space-evenly; /* Evenly distribute space between cards */
+  margin: 20px; /* Add margin around the card group */
+}
+
+/* Styling for each individual card */
+.card {
+  position: relative; /* Position relative for overlay */
+  width: 300px; /* Set a fixed width for each card */
+  height: auto; /* Allow height to adjust based on content */
+  margin: 30px; /* Add margin around each card */
+  overflow: hidden; /* Hide overflow content */
+  border-radius: 10px; /* Add rounded corners */
+  background-color: #1c1e28; /* Darker background color for cards */
+  transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Hover effect for the card */
+.card:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+/* Styling for the card image */
+.card img {
+  width: 100%; /* Ensure the image takes the full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the available space while maintaining aspect ratio */
+}
+
+/* Styling for the overlay on each card */
+.cardOverlay {
+  position: absolute; /* Position absolute for overlay */
+  top: 0; /* Align overlay to the top */
+  left: 0; /* Align overlay to the left */
+  width: 100%; /* Take up the full width */
+  height: 100%; /* Take up the full height */
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  justify-content: center; /* Center-align content vertically */
+  text-align: center; /* Center-align text horizontally */
+  padding: 20px; /* Add padding */
+  color: white; /* White text color */
+  opacity: 0; /* Initially hide the overlay */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+  border-radius: 4px; /* Add rounded corners */
+}
+
+/* Hover effect for the card overlay */
+.card:hover .cardOverlay {
+  opacity: 1; /* Change opacity to fully visible on hover */
+}
+
+/* Center title and explore link inside the card overlay */
+.cardOverlay .cardText {
+  position: absolute; /* Position absolute for precise placement */
+  top: 50%; /* Position at vertical center */
+  left: 50%; /* Position at horizontal center */
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  width: 100%; /* Take up the full width */
+}
+
+/* Center title and explore link inside the card overlay */
+.cardOverlay .cardContent {
+  width: 100%; /* Take up the full width */
+}
+
+/* Styling for the custom card title */
+.cardTitleCustom {
+  font-size: 18px; /* Adjust font size as needed */
+  font-weight: bolder; /* Apply bold font weight */
+  margin-bottom: 10px; /* Add margin at the bottom */
+  margin: 10px; /* Apply margin */
+  padding: 5px; /* Apply padding */
+}
+
+/* Styling for the "Explore" link inside the card overlay */
+.cardOverlay .exploreText {
+  font-size: 1.5rem; /* Adjust font size */
+  color: #ffd700; /* Set text color to gold */
+  cursor: pointer; /* Show pointer cursor on hover */
+  margin-top: 10px; /* Add margin at the top */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+/* Hover effect for the "Explore" link */
+.cardOverlay .exploreText:hover {
+  color: #3498db; /* Change text color to blue on hover */
+}
+
+/* Styling for the icons and their container inside the card overlay */
+.cardOverlay .cardIcons {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange icons in a row */
+  align-items: flex-end; /* Align icons to the bottom */
+  justify-content: space-between; /* Evenly distribute space */
+  margin-top: auto; /* Move icons to the bottom */
+  gap: 20px; /* Add space between icons */
+}
+
+/* Styling for the edit and delete icons */
+.editIcon,
+.deleteIcon {
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-size: 20px; /* Set font size */
+  margin-top: 5px; /* Add margin at the top */
+}
+
+/* Additional styling for the edit icon */
+.editIcon {
+  color: #3498db; /* Set edit icon color to blue */
+}
+
+/* Additional styling for the delete icon */
+.deleteIcon {
+  color: #e74c3c; /* Set delete icon color to red */
+}
+
+/* Styling for the "No books available" message */
+.noBooksMessage {
+  font-size: 16px; /* Set font size */
+  color: #ffffff; /* Set text color to white */
+  margin-top: 20px; /* Add margin at the top */
+  text-align: center; /* Center-align text */
+}

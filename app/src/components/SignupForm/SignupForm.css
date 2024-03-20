@@ -1,0 +1,161 @@
+.signup-form {
+  width: 100%;
+  max-width: 600px; /* Adjust width as needed */
+  margin: 0 auto;
+  padding: 20px; /* Added padding for better spacing */
+  border: 1px solid black; /* Added border for better visual separation */
+  border-radius: 10px; /* Added border radius for rounded corners */
+}
+
+.signup-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signupForm-field-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 15px; /* Gap between fields */
+}
+
+.signupForm-input-container {
+  margin-bottom: 15px;
+}
+
+.signupForm-input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.signupForm-input-container input[type="text"],
+.signupForm-input-container input[type="email"],
+.signupForm-input-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Increased font size for better readability */
+}
+
+.signupForm-input-container input[type="number"] {
+  width: 100%; /* Adjusted width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Added styling for select dropdown */
+.signupForm-input-container select {
+  width: 100%; /* Adjusted width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signupForm-input-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Blue button color */
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.signupForm-input-container input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.signup-form p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.signup-form p a {
+  color: #007bff; /* Blue link color */
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.signup-form .signup-success {
+  text-align: center;
+  padding: 20px;
+  background-color: #d4edda; /* Background color for success message */
+  border: 1px solid #c3e6cb; /* Border color for success message */
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.signup-form .signup-success h2 {
+  color: #155724; /* Heading color for success message */
+  margin-bottom: 10px;
+}
+
+.signup-form .signup-success p {
+  margin-bottom: 0;
+}
+
+/* Password Input Styling */
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-input-wrapper .password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-strength-container {
+  margin-top: 5px;
+}
+
+.password-strength-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.password-strength-container li {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.password-strength-container .valid {
+  color: green;
+}
+
+.password-strength-container .invalid {
+  color: red;
+}
+
+@media screen and (min-width: 576px) {
+  /* For tablets */
+  .signup-form {
+    max-width: 500px; /* Increase maximum width for tablets */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* For laptops */
+  .signup-form {
+    max-width: 700px; /* Increase maximum width for laptops */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* For desktops */
+  .signup-form {
+    max-width: 900px; /* Increase maximum width for desktops */
+  }
+}

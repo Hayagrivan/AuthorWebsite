@@ -1,0 +1,43 @@
+.book-carousel-container {
+  overflow-x: auto; /* Allow horizontal scrolling */
+  width: 100%; /* Set a fixed width */
+  background-color: black; /* Background color for the container */
+}
+
+/* Styles for the heading within the book carousel container */
+.book-carousel-container h1 {
+  color: white; /* Text color for the heading */
+}
+
+/* Styles for the book carousel */
+.book-carousel {
+  display: flex; /* Use flexbox for layout */
+  padding: 20px; /* Add padding around the carousel */
+  background-color: black; /* Background color for the carousel */
+}
+
+/* Styles for individual book items */
+.book-item {
+  width: 400px; /* Set width for each book item */
+  text-align: center; /* Center-align text within the item */
+  margin-right: 20px; /* Add some spacing between items */
+}
+
+/* Styles for the last book item to remove the right margin */
+.book-item:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
+/* Styles for the book cover image within each item */
+.book-item img {
+  width: 100%; /* Make the image fill the container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add rounded corners to the image */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+}
+
+/* Styles for the paragraph containing book title */
+.book-item p {
+  margin-top: 10px; /* Add margin on top of the paragraph */
+  color: #fff; /* Text color for the book title */
+}

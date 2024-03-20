@@ -1,0 +1,33 @@
+/* Main container for the login page */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Minimum height of the viewport */
+  background-color: linear-gradient(
+    90deg,
+    rgba(255, 153, 51, 1) 0%,
+    /* Start color */ rgba(217, 130, 63, 1) 0%,
+    /* Middle color 1 */ rgba(89, 54, 101, 1) 50%,
+    /* Middle color 2 */ rgba(52, 31, 112, 1) 100%,
+    /* Middle color 3 */ rgba(0, 0, 128, 1) 100% /* End color */
+  );
+  background-image: url(../../assets/images/login-background.jpg); /* Background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+}
+
+/* Container for the login form */
+.login-container {
+  width: 90%; /* Width of the container */
+  max-width: 400px; /* Maximum width of the container */
+  padding: 20px; /* Padding around the content */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}

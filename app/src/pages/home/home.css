@@ -1,0 +1,221 @@
+/* Container for the home page */
+.section-container {
+  margin-top: 40px; /* Add top margin for spacing */
+  text-align: center; /* Center align text */
+}
+
+/* Styling for paragraphs within section containers */
+.section-container p {
+  font-size: 18px; /* Set font size */
+  line-height: 1.6; /* Set line height for better readability */
+}
+
+/* Container for the banner slider */
+.banner-slider-container {
+  position: relative; /* Set position to relative for absolute positioning of elements */
+  width: 100%; /* Set width to 100% */
+  height: auto; /* Automatically adjust height */
+  max-height: 1000px; /* Set maximum height */
+  margin-bottom: 40px; /* Add bottom margin for spacing */
+  background-color: black; /* Set background color */
+  display: flex; /* Set display to flex for child alignment */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-evenly; /* Distribute space evenly between items */
+}
+
+/* Styling for the banner slider */
+.banner-slider {
+  width: 60%; /* Set width of the slider */
+  height: 400px; /* Set height of the slider */
+}
+
+/* Individual slide within the banner slider */
+.slide {
+  display: none; /* Hide slides by default */
+  position: relative; /* Set position to relative for absolute positioning of elements */
+  text-align: center; /* Center align text */
+}
+
+/* Styling for active slide */
+.slide.active {
+  display: flex; /* Display active slide as flex */
+  flex-direction: row; /* Set flex direction to row */
+  align-items: center; /* Center align items vertically */
+  justify-content: center; /* Center align items horizontally */
+}
+
+/* Styling for images within slides */
+.slide img {
+  width: auto; /* Automatically adjust width */
+  max-width: 80%; /* Set maximum width */
+  max-height: 300px; /* Set maximum height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+/* Styling for content within slides */
+.slide-content {
+  margin-right: 20px; /* Add right margin for spacing */
+  text-align: left; /* Left align text */
+}
+
+/* Styling for heading within slides */
+.slide h1 {
+  color: #fff; /* Set text color to white */
+  margin-top: 50px; /* Add top margin for spacing */
+  font-size: 32px; /* Set font size */
+  text-align: center; /* Center align text */
+}
+
+/* Styling for headings within slide content */
+.slide-content h2 {
+  color: #fff; /* Set heading color to white */
+  font-size: 24px; /* Set font size */
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+/* Styling for short description within slide content */
+.short-description {
+  color: #fff; /* Set text color to white */
+  font-size: 16px; /* Set font size */
+  margin: 20px 0; /* Add top and bottom margin for spacing */
+}
+
+/* Styling for explore button */
+.explore-button {
+  background-color: darkgoldenrod; /* Set background color */
+  color: black; /* Set text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.3s ease; /* Add transition effect */
+  font-weight: bold; /* Set font weight to bold */
+  font-size: 18px; /* Set font size */
+}
+
+/* Hover effect for explore button */
+.explore-button:hover {
+  background-color: burlywood; /* Change background color on hover */
+}
+
+/* Styling for carousel indicators */
+.carousel-indicators {
+  position: absolute; /* Set position to absolute */
+  bottom: 10px; /* Set distance from bottom */
+  left: 50%; /* Set position to center horizontally */
+  transform: translateX(-50%); /* Center align horizontally */
+}
+
+/* Styling for carousel indicators */
+.indicator {
+  display: inline-block; /* Set display to inline-block */
+  width: 10px; /* Set width */
+  height: 10px; /* Set height */
+  margin: 0 5px; /* Add margin */
+  border-radius: 50%; /* Set border-radius to make it round */
+  background-color: #ccc; /* Set background color */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Styling for active carousel indicator */
+.indicator.active {
+  background-color: #fff; /* Change background color for active indicator */
+}
+
+/* Container for introduction content */
+.introduction-container {
+  max-width: 1000px; /* Set maximum width */
+  margin: 0 auto; /* Center align horizontally */
+  padding: 20px; /* Add padding */
+  text-align: justify; /* Justify text */
+}
+
+/* Styling for heading within introduction */
+.introduction-container h1 {
+  font-size: 36px; /* Set font size */
+  font-weight: bold; /* Set font weight to bold */
+  color: #333; /* Set text color */
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+/* Styling for introduction text */
+.introduction-text {
+  font-size: 18px; /* Set font size */
+  line-height: 1.6; /* Set line height for better readability */
+  color: #666; /* Set text color */
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  /* Reduce padding for introduction container */
+  .introduction-container {
+    padding: 10px;
+  }
+
+  /* Adjust font size for smaller screens */
+  .introduction-container h1 {
+    font-size: 30px;
+  }
+
+  /* Adjust font size for smaller screens */
+  .introduction-text {
+    font-size: 16px;
+  }
+}
+
+/* Styles for previous and next buttons */
+.prev,
+.next {
+  position: absolute; /* Set position to absolute */
+  top: 50%; /* Set position to center vertically */
+  transform: translateY(-50%); /* Center align vertically */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer; /* Set cursor to pointer */
+  z-index: 1; /* Set z-index to ensure icons are above other elements */
+}
+
+/* Styling for previous button */
+.prev {
+  left: 10px; /* Set position from left */
+}
+
+/* Styling for next button */
+.next {
+  right: 10px; /* Set position from right */
+}
+
+/* Styling for material icons */
+.material-icons {
+  font-family: "Material Symbols Outlined"; /* Set font family */
+  color: white; /* Set text color */
+  font-size: 40px; /* Set font size */
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .banner-slider {
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
+  .slide-content {
+    margin-right: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .slide-content h2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .short-description {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .explore-button {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}

@@ -1,0 +1,53 @@
+/* Styling for the navigation container */
+.navbar {
+  display: flex; /* Arrange children in a row using flexbox */
+  gap: 20px; /* Set the gap between children to 20 pixels */
+}
+
+/* Styling for navigation links */
+.navbar a {
+  font-size: 1.2em; /* Set the font size of the navigation links */
+  text-decoration: none; /* Remove underlines from the links */
+  color: #fff; /* Set the text color of the links to white */
+  padding: 10px; /* Add padding around the links */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  transition: background-color 0.3s; /* Add a smooth transition for background color changes */
+}
+
+/* Styling for navigation links on hover */
+.navbar a:hover {
+  background-color: rgba(
+    51,
+    153,
+    255,
+    0.5
+  ); /* Change the background color to blue on hover */
+}
+
+/* Styling for the active navigation link */
+.active-link {
+  background-color: black; /* Set the background color to black for the active link */
+}
+
+/* Styling for the login button */
+.login-button,
+.logout-button {
+  font-size: 1.2em; /* Set the font size of the button */
+  padding: 10px 20px; /* Add padding to the button */
+  border: none; /* Remove border */
+  background-color: rgba(
+    255,
+    153,
+    51,
+    0.5
+  ); /* Set background color to transparent */
+  color: #fff; /* Set text color to white */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Add smooth transition for background color changes */
+}
+
+/* Styling for the login and logout buttons on hover */
+.login-button:hover,
+.logout-button:hover {
+  background-color: rgba(255, 153, 51); /* Change background color on hover */
+}

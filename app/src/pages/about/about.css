@@ -1,0 +1,77 @@
+/* Styles for the main container of the about page */
+.about-page {
+  display: flex; /* Display flex to arrange children in a row */
+  background-color: #0e0f15; /* Background color */
+  height: 100vh; /* Full viewport height */
+  gap: 20px; /* Gap between child elements */
+}
+
+/* Styles for the main content section */
+.about-section {
+  flex: 2; /* Take 2/3 of the available width */
+  padding: 30px; /* Padding for content */
+  color: #fff; /* Text color */
+  margin-bottom: 20px; /* Margin at the bottom */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Styles for heading elements inside the about section */
+.about-section h2 {
+  color: #ffd700; /* Heading color */
+}
+
+/* Styles for paragraphs inside the about section */
+.about-section p {
+  font-size: 20px; /* Font size */
+  line-height: 1.6; /* Line height for readability */
+}
+
+/* Styles for the tab navigation section */
+.tab-section {
+  display: flex; /* Display flex for horizontal alignment */
+  overflow-x: auto; /* Enable horizontal scrolling if tabs overflow */
+  flex-direction: row; /* Arrange tabs in a row */
+  margin-bottom: 40px; /* Margin at the bottom */
+  margin-top: 40px; /* Margin at the top */
+}
+
+/* Styles for individual tabs in the tab navigation */
+.tab {
+  cursor: pointer; /* Cursor to pointer on hover */
+  padding: 10px 15px; /* Padding for the tabs */
+  margin-right: 10px; /* Margin to separate tabs */
+  background-color: #333; /* Default background color */
+  color: #fff; /* Text color */
+  border: 1px solid #fff; /* Border */
+  border-radius: 5px; /* Border-radius for rounded corners */
+}
+
+/* Styles for the active tab in the tab navigation */
+.tab.active {
+  background-color: #ffd700; /* Background color for active tab */
+  color: #333; /* Text color for active tab */
+}
+
+/* Styles for the author section */
+.author-section {
+  flex: 1; /* Take 1/3 of the available width */
+  padding: 20px; /* Padding for content */
+  display: flex; /* Display flex for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+/* Styles for the container of the author's photo */
+.author-photo {
+  max-width: 100%; /* Maximum width for responsiveness */
+  max-height: 100vh; /* Maximum height to fill the viewport */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Styles for the author's photo inside its container */
+.author-photo img {
+  max-width: 100%; /* Maximum width for responsiveness */
+  max-height: 100%; /* Maximum height to fill the container */
+  border-radius: 0%; /* Optional: Border-radius for rounding corners */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}

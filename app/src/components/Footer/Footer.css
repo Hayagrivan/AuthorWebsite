@@ -1,0 +1,17 @@
+/* Styles for the footer container */
+.footer {
+  /* Center-align the text within the footer */
+  text-align: center;
+  /* Padding around the footer (20 pixels top and bottom, 0 pixels left and right) */
+  padding: 20px 0;
+  /* Background color of the footer */
+  background-color: black;
+  /* Text color of the footer */
+  color: #fff;
+}
+
+/* Styling for paragraphs within the footer */
+.footer p {
+  /* Set the font size of the paragraphs within the footer */
+  font-size: 1em;
+}
